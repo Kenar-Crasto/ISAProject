@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload and Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="upload-section">
+                <!-- Regular File Upload Input -->
+                <input type="file" id="file-upload" multiple accept="image/*" style="display:none;">
+                <label for="file-upload" class="upload-button">Upload Photo</label>
+
+                <!-- Camera Input for Taking Photos -->
+                <input type="file" id="camera-upload" capture="user" accept="image/*" style="display:none;">
+                <button id="take-photo" class="take-photo-button">Take Photo</button>
+            </div>
+            <div id="preview-gallery" class="preview-gallery"></div>
+        </div>
+        <div class="right-panel">
+            <div class="chatbot">
+                <div class="chat-display"></div>
+                <input type="text" class="chat-input">
+                <button class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
