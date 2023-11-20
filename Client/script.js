@@ -11,12 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
         updateGallery(event.target.files);
     });
 
+    // Have to make this open the camera.
     document.getElementById('take-photo').addEventListener('click', function() {
-        cameraInput.click(); // Trigger the camera input
+        cameraInput.click();
     });
 
+    // Adding more pictures to the preview gallery.
     function updateGallery(files) {
-        gallery.innerHTML = ''; // Clear existing images
+        gallery.innerHTML = ''; 
 
         for (var i = 0; i < files.length; i++) {
             var file = files[i];
