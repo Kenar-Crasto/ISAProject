@@ -83,6 +83,31 @@ body {
     margin-top: 10px;
     cursor: pointer;
 }
+.result-container {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    text-align: center; /* Center content */
+}
+
+/* Style for image previews */
+/* Style for smaller image previews */
+.image-preview {
+    max-width: 200px; /* Set a maximum width */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+/* CSS to style individual result items */
+.result-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
 
 /* Add responsiveness */
 @media (max-width: 768px) {
